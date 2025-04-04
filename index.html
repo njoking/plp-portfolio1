@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Felister Njoki | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Felister Njoki</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content container">
+      <div class="hero-image">
+        <img src="Felly.jpg" alt="Felister Njoki" />
+      </div>
+
+      <div class="hero-text">
+        <h1><strong> I’m <span class="highlight">Felister Njoki</span></h1>
+        <h2>I am a <span id="rotatingTitle" class="title-rotator">Full Stack Developer</span></strong></h2>
+        <p class="summary">
+          I design and build responsive, performant, and user-centered web applications. <br>
+          My passion lies in turning ideas into delightful digital experiences.
+        </p>
+        <a href="projects.html" class="cta-button">Explore My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where I Learned Section -->
+  <section class="education">
+    <div class="container">
+      <h2>Where I Learned</h2>
+      <p class="education-text">
+        I am a graduate of Jomo Kenyatta University of Agriculture and Technology</br>
+        
+        I am currently studying software engineering in PLP academy.
+        I am also studying data science in Data Camp
+
+        Additionally, I have furthered my skills through self-learning and projects in web development, data engineering, and software engineering.
+      </p>
+    </div>
+  </section>
+
+  <!-- What I Do Section -->
+  <section class="what-i-do">
+    <div class="container">
+      <h2>What I Do</h2>
+      <div class="do-list">
+        <div class="do-item">
+          <h3>Web Development</h3>
+          <p>
+            I create fully responsive websites using the latest technologies such as HTML, CSS, JavaScript, and React.js. My goal is to build engaging, user-friendly interfaces that leave a lasting impact.
+          </p>
+        </div>
+        <div class="do-item">
+          <h3>Full Stack Development</h3>
+          <p>
+            I have experience building full-stack web applications using tools like Node.js, Express, Django, and Flask for backend development, while leveraging React or Vue.js for front-end development.
+          </p>
+        </div>
+        <div class="do-item">
+          <h3>Data Engineering</h3>
+          <p>
+            I enjoy working with data to create intelligent solutions. My expertise includes data pipelines, ETL processes, and machine learning, leveraging Python, SQL, and cloud platforms like AWS.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Connect with me:</p>
+      <div class="social-links">
+        <a href="https://github.com/njoking" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/felister-njoki-815743282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+        <a href="https://x.com/ngugi_njok?t=EW6zXa0fXRSboS7l8h0iUw&s=08" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const titles = [
+      "Full Stack Developer",
+      "Software Engineer",
+      "Web Developer",
+      "Data Engineer"
+    ];
+    let index = 0;
+    const titleElement = document.getElementById("rotatingTitle");
+
+    setInterval(() => {
+      index = (index + 1) % titles.length;
+      titleElement.style.opacity = 0;
+      setTimeout(() => {
+        titleElement.textContent = titles[index];
+        titleElement.style.opacity = 1;
+      }, 500);
+    }, 5000);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,395 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;  /* Set the background to grey-black */
+    color: white;  /* Set text to white */
+}
+
+/* Header */
+header {
+    background: #212121;  /* Dark grey background for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #64ffda;  /* Light cyan color for active links */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #1e3c72;  /* Deep blue background for the hero section */
+    background: linear-gradient(120deg, #1e3c72, #2a5298);  /* Gradient background */
+    color: white;
+    margin-bottom: 80px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;  /* Circular crop */
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    color: #64ffda;  /* Light cyan color */
+    margin-bottom: 20px;
+}
+
+.title-rotator {
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.highlight {
+    color: #64ffda;
+}
+
+.summary {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.cta-button {
+    background-color: #64ffda;
+    color: #333;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #52e3c2;
+}
+
+/* Education Section */
+/* Education Section */
+.education {
+    background-color: #2c3e50;  /* Darker grey with a slight blue tint for better contrast */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;  /* White text for better readability */
+}
+
+.education h2 {
+    font-size: 36px;
+    color: #f39c12;  /* Warm gold color for the heading */
+    margin-bottom: 20px;
+}
+
+.education-text {
+    font-size: 18px;
+    color: #ecf0f1;  /* Light grey text color for the body text */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.education-text strong {
+    color: #e74c3c;  /* Red color for emphasis on key institutions or subjects */
+}
+
+.education-text a {
+    color: #3498db;  /* Bright blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.education-text a:hover {
+    color: #f39c12;  /* Change link color to warm gold on hover */
+}
+
+
+/* What I Do Section */
+.what-i-do {
+    background-color: #333;  /* Grey background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* What I Do Section */
+.what-i-do {
+    background-color: #34495e;  /* Darker grey-blue for a sleek professional look */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;  /* White text for readability */
+}
+
+.what-i-do h2 {
+    font-size: 36px;
+    color: #e67e22;  /* Warm orange color for the heading */
+    margin-bottom: 20px;
+}
+
+.what-i-do-text {
+    font-size: 18px;
+    color: #ecf0f1;  /* Light grey text color for the body */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.what-i-do-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.what-i-do-text li {
+    font-size: 18px;
+    color: #e74c3c;  /* Red for action items or skills */
+    margin: 10px 0;
+}
+
+.what-i-do-text a {
+    color: #3498db;  /* Bright blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.what-i-do-text a:hover {
+    color: #f39c12;  /* Change link color to warm gold on hover */
+}
+
+
+.do-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.do-item h3 {
+    font-size: 24px;
+    color: #0d1b2a;
+    margin-bottom: 15px;
+}
+
+.do-item p {
+    font-size: 16px;
+    color: white;  /* Ensure the text is white */
+}
+
+/* General Styles for Projects */
+.projects {
+    background-color: #2c3e50;  /* Dark grey-blue for consistency with home page */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #e67e22;  /* Warm orange color for the heading */
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;  /* Darker grey-blue background for projects */
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.project-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.project-content h3 {
+    font-size: 28px;
+    color: #ecf0f1;  /* Light grey for project title */
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    font-size: 18px;
+    color: #bdc3c7;  /* Light grey text for project description */
+    margin-bottom: 20px;
+}
+
+.project-link {
+    font-size: 18px;
+    color: #3498db;  /* Bright blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #f39c12;  /* Change link color to warm gold on hover */
+}
+
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background: #0056b3;
+}
+
+.cv-download {
+    margin-top: 20px;
+}
+
+.cv-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cv-download a:hover {
+    background: #218838;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #f39c12;  /* Gold color on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #212121;  /* Dark grey background */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .social-links a {
+    color: #64ffda;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .do-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+}
